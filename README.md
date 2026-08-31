@@ -1,4 +1,4 @@
-# pokemon
+### Pokémon
 ## Introducción 
 Nuestro proyecto se basa principalmente en una tienda de items de Pokémon, con un amplio catalogo de productos de la marca.
 
