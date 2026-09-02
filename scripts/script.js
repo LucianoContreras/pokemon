@@ -147,12 +147,6 @@ const productos=[
         imagen:"/estilos/Seguro_debilidad.png",
         precio: 50000
     }    
-
-
-
-
-    
-
 ]
 
 const contenedor=document.querySelector(".container")
@@ -166,3 +160,13 @@ contenedor.innerHTML=productos.map(producto=>`
     </div>
 </div>
 `).join("")
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems);
+  });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    var instances = M.Dropdown.init(elems);
+  });

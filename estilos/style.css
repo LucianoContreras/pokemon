@@ -1,12 +1,12 @@
 body{
- background-color:honeydew ;
+ background-color: #fff;
 }
 
 
 .caja-item{
     border: solid #000;
     border-radius: 12px;
-    background-color: lightgrey;
+    background-color: #fff;
     width: clamp(12.5rem, 10.5rem + 8.3vw, 18rem);
     height: clamp(12.5rem, 10.5rem + 8.3vw, 18rem);
     display: flex;
@@ -15,8 +15,36 @@ body{
     justify-content: center;
     gap: 4px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Arial black',sa;
     color: #000;
+}
+.dropdown-content{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 20px;
+    width: 220px;
+    gap: 10px;
+}
+
+.dropdown-content a{
+    font-size: 16px;
+    color: #000 !important;
+    display: block;
+    line-height: 22px;
+    padding: 14px 16px;
+}
+
+
+.dropdown-trigger.btn:hover{
+    background-color: #fff;
+    color:#000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+.dropdown-trigger.btn:focus{
+    background-color: #fff;
+    color:#000;
+    
 }
 
 .caja:hover{
@@ -24,6 +52,25 @@ body{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
+.dropdown-trigger.btn{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 20px;
+    width: 20vh;
+    gap: 10px;
+}
+.sidenav{
+    display: flex;
+
+}
+.container-btn{
+    padding: 10px ;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    gap: 20px;
+}
 .container{
     display: flex;
     align-content: center;
@@ -31,7 +78,7 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     gap: 20px;
-    padding: 50px;
+    padding: 1px;
 }
 .contenedor-precio{
     display: flex;
@@ -57,11 +104,55 @@ body{
 }
 
 .nav-wrapper{
-    background-color:crimson;
+    background-color:blue; 
 }
+
+.navbar-fixed{
+    width: 100%;
+    height: 60px;
+}
+
 
 .pokedolares{
     width: 50%;
     height: 20px;
 }
 
+.carousel {
+    border: solid #000;
+    border-radius: 20px;
+    height: 100px;
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+    overflow: solid #000;
+    position: relative;
+    background-color: #fdfcfc;
+}
+
+.carousel-texto{
+     margin-top: 16px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-align: center;
+    color: #f7f7f7;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.carousel .carousel-item {
+    width: 350px; 
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fdfcfc00;
+    color: #fff;
+}
+
+.carousel .carousel-item img {
+    max-height: 180px;
+    max-width: 100%;
+    width: auto;   
+    height: auto;
+    object-fit: contain;
+}
