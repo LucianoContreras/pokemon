@@ -4,58 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="/estilos/Pokedolares.png">
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/estilos/style.css">
-
+    <link rel="stylesheet" href="/estilos/Pokedolares.png">
     <title>Pokémon</title>
     
 </head>
 <body>
-    <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo">
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/330px-International_Pok%C3%A9mon_logo.svg.png" alt="Logo Pokémon" class="logo-nav">
-                </a>
-            </div>
+    <header>
+       <nav>
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">
+                <img src="/estilos/pokemon.png"  class="logo">
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li class="nav-search-item">
+                  <input id="Producto.busqueda" type="text" class="nav-input-search" placeholder="Buscar producto">
+                </li>
+                <li><a herf="index.html">Home</a></li>
+                <li class='dropdown-trigger  nav-btn-filter' href="'#" data-target='dropdown1'>Filtros</li>
+
+                <li><a herf="blogs.html">Blogs</a></li>
+                <li>
+                    <a href="carrito.html">
+                        <i class="material-icons">shopping_cart</i>
+                    </a>
+                </li>
+            </ul>
+            <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="#!" data-categoria="todos">No filtrar</a></li>
+                <li><a href="#!" data-categoria="pokeballs">Pokeballs</a></li>
+                <li><a href="#!" data-categoria="evolutivos">Objetos Evolutivos</a></li>
+                <li><a href="#!" data-categoria="objetos batalla">Objetos combate</a></li>
+
+            </ul>
+        </div>
         </nav>
-    </div>
-
-    <div class="container-btn">
-         <!-- Activador desplegable -->
- <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Filtros</a>
-
-  <!-- Estructura desplegable -->
-  <ul id='dropdown1' class='dropdown-content'>
-    <li><a href="#!">Pokeballs</a></li>
-    <li><a href="#!">Objetos Evolutivos</a></li>
-    <li><a href="#!">Objetos combate</a></li>
-  </ul>
-    </div>
- 
-
-
-    <div class="container">
+    </header>
+    <div class="contenedor-carousel">
+      <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="/estilos/banda,focus.png"></a>
+        <a class="carousel-item" href="#two!"><img src="/estilos/Botas_gruesas.png"></a>
+        <a class="carousel-item" href="#three!"><img src="/estilos/Electrizador.png"></a>
+        <a class="carousel-item" href="#four!"><img src="/estilos/Magmatizador.png"></a>
+        <a class="carousel-item" href="#five!"><img src="/estilos/Revestimiento_metal.png"></a>
+      </div>
+    </div> 
+    <div class="main-layout">
+      <div class="container">
         <div class="caja-item hoverable">
             <div class="contenedor-precio">
                     
             </div>
         </div> 
-
-  
-  </div>
-
-      <div class="caja carousel">
-      <a class="carousel-item" href="#one!"><img src="/estilos/banda,focus.png"></a>
-      <a class="carousel-item" href="#two!"><img src="/estilos/Botas_gruesas.png"></a>
-      <a class="carousel-item" href="#three!"><img src="/estilos/Electrizador.png"></a>
-      <a class="carousel-item" href="#four!"><img src="/estilos/Magmatizador.png"></a>
-      <a class="carousel-item" href="#five!"><img src="/estilos/Revestimiento_metal.png"></a>
+      </div>
+      
+      
     </div>
+
+      
     
-    
-    <footer class="page-footer indigo accent-4">
+   <footer class="page-footer">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -63,19 +74,19 @@
                 <p class="grey-text text-lighten-4"></p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Contact</h5>
+                <h5 class="white-text"></h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Youtube</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">TikTok</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Twitch</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/pokemon/">Instagram</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.youtube.com/@OfficialPokémonTV">Youtube</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.tiktok.com/@pokemonofficial/video/7679614990688505101">TikTok</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.twitch.tv/pokemon">Twitch</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2014 Copyright Text
+            © 2026 Copyright Text
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
           </div>

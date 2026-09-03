@@ -1,12 +1,16 @@
 body{
- background-color: #fff;
+ background-color: #212529;
 }
+.nav-wrapper{
+    
+    background-color: #E63946;
+} 
 
 
 .caja-item{
-    border: solid #000;
-    border-radius: 12px;
-    background-color: #fff;
+    border: 4px solid #E63946;
+    border-radius: 30px;
+    background-color: #F8F9FA;
     width: clamp(12.5rem, 10.5rem + 8.3vw, 18rem);
     height: clamp(12.5rem, 10.5rem + 8.3vw, 18rem);
     display: flex;
@@ -16,20 +20,22 @@ body{
     gap: 4px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-family:'Arial black',sa;
-    color: #000;
+    color: #1A1A1A;
 }
 .dropdown-content{
     background-color: #fff;
     color: #000;
-    border: 1px solid #000;
+    border: 1px solid #fff;
     border-radius: 20px;
     width: 220px;
     gap: 10px;
 }
 
 .dropdown-content a{
+
     font-size: 16px;
-    color: #000 !important;
+    background-color: #E63946;
+    color: #fff !important;
     display: block;
     line-height: 22px;
     padding: 14px 16px;
@@ -37,40 +43,42 @@ body{
 
 
 .dropdown-trigger.btn:hover{
-    background-color: #fff;
-    color:#000;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    background-color:#E63946; 
+    color:#fff;
+    box-shadow: 0,0,0;
 }
 .dropdown-trigger.btn:focus{
     background-color: #fff;
     color:#000;
-    
+    text-align: justify;
+  
+
 }
 
 .caja:hover{
     transform: translateY(-8px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 16px 16px rgba(247, 246, 246, 0.4);
 }
 
-.dropdown-trigger.btn{
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #000;
-    border-radius: 20px;
-    width: 20vh;
+.dropdown-trigger{
+    background-color:#E63946; 
+    color: #fff;
+    text-align: center;
+    width: 10vh;
     gap: 10px;
+   
 }
-.sidenav{
-    display: flex;
 
-}
-.container-btn{
-    padding: 10px ;
+.main-layout{
     display: flex;
-    justify-content:end;
-    align-items: center;
-    gap: 20px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px;
+   
 }
+
+
 .container{
     display: flex;
     align-content: center;
@@ -81,6 +89,7 @@ body{
     padding: 1px;
 }
 .contenedor-precio{
+    color: #FFB703;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -95,21 +104,12 @@ body{
 
 
 .logo{
-    position: fixed;
+    position:static ;
     top: 20px;
     left: 20px;
-    width: 150px; 
+    width: 200px; 
     height: auto;
     z-index: 10;
-}
-
-.nav-wrapper{
-    background-color:blue; 
-}
-
-.navbar-fixed{
-    width: 100%;
-    height: 60px;
 }
 
 
@@ -118,20 +118,30 @@ body{
     height: 20px;
 }
 
+.contenedor-carousel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 .carousel {
-    border: solid #000;
-    border-radius: 20px;
-    height: 100px;
+    
+    height: 200px;
     width: 100%;
     max-width: 900px;
     margin: 30px auto;
-    overflow: solid #000;
     position: relative;
-    background-color: #fdfcfc;
+    background-color: #212529;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .carousel-texto{
-     margin-top: 16px;
+    margin-top: 16px;
     font-weight: 600;
     font-size: 0.95rem;
     text-align: center;
@@ -141,6 +151,7 @@ body{
 
 .carousel .carousel-item {
     width: 350px; 
+    height: 350;
     flex-direction: column;
     display: flex;
     align-items: center;

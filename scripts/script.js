@@ -149,17 +149,38 @@ const productos=[
     }    
 ]
 
-const contenedor=document.querySelector(".container")
-contenedor.innerHTML=productos.map(producto=>`
-<div class="caja-item hoverable">
-    <p>${producto.nombre}</p>
-    <img src="${producto.imagen}" class="item">
-    <div class="contenedor-precio">
+const contenedor = document.querySelector(".container");
+function mostrarProductos(lista) {
+  contenedor.innerHTML = lista.map(productos => `
+    <div class="caja-item hoverable">
+      <p>${productos.nombre}</p>
+      <img src="${productos.imagen}" class="item">
+      <div class="contenedor-precio">
         <img src="/estilos/Pokedolares.png" class="pokedolares">
-        <p>${producto.precio}</p>
+        <p>${productos.precio}</p>
+      </div>
     </div>
-</div>
-`).join("")
+  `).join("");
+}
+mostrarProductos(productos);
+
+document.querySelectorAll('#dropdown1 a').forEach(boton => {
+  boton.addEventListener('click', (e) => {
+    e.preventDefault(); 
+    
+    const categoriaSeleccionada = e.target.getAttribute('data-categoria');
+
+    if (categoriaSeleccionada === 'todos') {
+      mostrarProductos(productos);
+    } else {
+      const productosFiltrados = productos.filter(
+        producto => producto.categoria === categoriaSeleccionada
+      );
+      mostrarProductos(productosFiltrados);
+    }
+  });
+});
+
 
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.carousel');
@@ -169,4 +190,14 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.dropdown-trigger');
     var instances = M.Dropdown.init(elems);
+  });
+
+  const inputBusqueda = document.getElementById('Producto.busqueda');
+  inputBusqueda.addEventListener('input',(e) => {
+    const textoBusqueda=e.target.value.toLowerCase().trim();
+    
+    const productosFiltrados =productos.filter(producto =>
+        producto.nombre.toLowerCase().includes(textoBusqueda)
+    );
+    mostrarProductos(productosFiltrados);
   });
