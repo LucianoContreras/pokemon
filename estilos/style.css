@@ -6,22 +6,67 @@ body{
     background-color: #E63946;
 } 
 
-
-.caja-item{
-    border: 4px solid #E63946;
-    border-radius: 30px;
-    background-color: #F8F9FA;
+/*
+Cards - Tarjetas de productos
+*/
+.card .card-item{
     width: clamp(12.5rem, 10.5rem + 8.3vw, 18rem);
     height: clamp(12.5rem, 10.5rem + 8.3vw, 18rem);
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    font-family:'Arial black',sa;
-    color: #1A1A1A;
+    background-color: #000;
 }
+
+.card content{
+    color: #000;
+}
+
+.card-image img{
+    width: 100px;
+    height: 100px;
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+    position: static;
+    color: #000;
+    
+}
+
+.card-image{
+    position: static !important;
+    top: auto;
+    left: auto;
+    width: auto;
+    max-width: 90%;
+    max-height: 150%;
+    object-fit: contain;
+
+}
+
+.card-title{
+    position: absolute;
+    bottom: 0;
+    color: #000;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 16px 16px rgba(247, 246, 246, 0.4);
+}
+.nombre-producto{
+    color: #000;
+    font-weight: 600;
+    margin-right: auto;
+}
+
+
+/*
+Cards
+*/
+
+
 .dropdown-content{
     background-color: #fff;
     color: #000;
@@ -55,10 +100,6 @@ body{
 
 }
 
-.caja:hover{
-    transform: translateY(-8px);
-    box-shadow: 0 16px 16px rgba(247, 246, 246, 0.4);
-}
 
 .dropdown-trigger{
     background-color:#E63946; 
@@ -78,9 +119,8 @@ body{
    
 }
 
-
 .container{
-    display: flex;
+    
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -88,6 +128,7 @@ body{
     gap: 20px;
     padding: 1px;
 }
+
 .contenedor-precio{
     color: #FFB703;
     display: flex;
@@ -114,30 +155,28 @@ body{
 
 
 .pokedolares{
-    width: 50%;
+    width: 10%;
     height: 20px;
+    object-fit: contain;
 }
 
-.contenedor-carousel{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.contenedor-carousel-slider{
     width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+    
 }
 
-.carousel {
-    
-    height: 200px;
+.carousel.carousel-slider{
+    height: 450px;
     width: 100%;
     max-width: 900px;
     margin: 30px auto;
     position: relative;
     background-color: #212529;
-    display: flex;
     align-items: center;
     justify-content: center;
-    
+    border: #f10606;
 }
 
 .carousel-texto{
@@ -149,9 +188,9 @@ body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.carousel .carousel-item {
-    width: 350px; 
-    height: 350;
+.carousel-slider .carousel-item{
+    width: 100%; 
+    height: 100%;
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -160,12 +199,20 @@ body{
     color: #fff;
 }
 
+.carousel .carousel-item .indicators,
+.carousel > .indicators {
+  bottom: -29px; 
+}
+
 .carousel .carousel-item img {
-    max-height: 180px;
+    max-height: 150px;
     max-width: 100%;
     width: auto;   
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    bottom: -30px;
 }
 
 .page-footer{

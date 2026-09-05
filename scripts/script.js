@@ -150,18 +150,37 @@ const productos=[
 ]
 
 const contenedor = document.querySelector(".container");
+
 function mostrarProductos(lista) {
-  contenedor.innerHTML = lista.map(productos => `
-    <div class="caja-item hoverable">
-      <p>${productos.nombre}</p>
-      <img src="${productos.imagen}" class="item">
-      <div class="contenedor-precio">
-        <img src="/estilos/Pokedolares.png" class="pokedolares">
-        <p>${productos.precio}</p>
-      </div>
+  contenedor.innerHTML = `
+    <div class="row">
+      ${lista.map(producto => `
+        <div class="col s12 m4">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img src="${producto.imagen}" class="item">
+              <span class="card-title">${producto.nombre}</span>
+            </div>
+            <div class="card-content">
+              <div class="contenedor-precio">
+              <span class="nombre-producto">${producto.nombre}</span>
+                <img src="/estilos/Pokedolares.png" class="pokedolares">
+                <span>${producto.precio}</span>
+              </div>
+            </div>
+            <div class="card-action">
+              <a href="#!" class="btn-agregar-carrito waves-effect waves-light" data-nombre="${producto.nombre}">
+                <i class="material-icons left">shopping_cart</i>Agregar
+              </a>
+            </div>
+          </div>
+        </div>
+      `).join("")}
     </div>
-  `).join("");
+  `;
 }
+
+mostrarProductos(productos);
 mostrarProductos(productos);
 
 document.querySelectorAll('#dropdown1 a').forEach(boton => {
@@ -181,10 +200,17 @@ document.querySelectorAll('#dropdown1 a').forEach(boton => {
   });
 });
 
-
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.carousel');
-    var instances = M.Carousel.init(elems);
+    var instances = M.Carousel.init(elems, {
+      fullWidth: true,
+      indicators: true,
+      duration: 200,
+      dist: -100,
+      shift: 0,
+      padding: 20,
+      numVisible: 5
+    });
   });
 
 document.addEventListener('DOMContentLoaded', function() {
