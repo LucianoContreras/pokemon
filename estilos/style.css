@@ -167,3 +167,19 @@ body{
     height: auto;
     object-fit: contain;
 }
+
+.page-footer{
+    padding: 60px 80px;
+    display: flex;
+    gap: 100px;
+    width: auto;
+    height: auto;
+}
+
+
+.footer-copyright{
+    justify-content: center;
+    display: flex;
+    width: auto;
+    height: auto;
+}
