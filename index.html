@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/estilos/style.css">
+    <link rel="stylesheet" href="/estilos/Pokedolares.png">
+    <title>Pokémon</title>
+    
+</head>
+<body>
+    <header>
+       <nav>
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">
+                <img src="/estilos/pokemon.png"  class="logo">
+            </a>
+            <ul id="nav-mobile" class="right">
+                <li class="nav-search-item">
+                  <input id="Producto.busqueda" type="text" class="nav-input-search" placeholder="Buscar producto">
+                </li>
+                   <li><a class='dropdown-trigger nav-btn-filter' href="#!" data-target='dropdown1'>Filtros</a></li>
+
+                <li><a herf="blogs.html">Blogs</a></li>
+                <li>
+                    <a href="carrito.html">
+                        <i class="material-icons">shopping_cart</i>
+                    </a>
+                </li>
+            </ul>
+            <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="#!" data-categoria="todos">No filtrar</a></li>
+                <li><a href="#!" data-categoria="pokeballs">Pokeballs</a></li>
+                <li><a href="#!" data-categoria="evolutivos">Objetos Evolutivos</a></li>
+                <li><a href="#!" data-categoria="objetos batalla">Objetos combate</a></li>
+
+            </ul>
+        </div>
+        </nav>
+    </header>
+
+    <div class="contenedor-carousel-slider">
+      <div class="carousel carousel-slider">
+        <a class="carousel-item" href="#one!"><img src="/estilos/banda,focus.png"></a>
+        <a class="carousel-item" href="#two!"><img src="/estilos/Botas_gruesas.png"></a>
+        <a class="carousel-item" href="#three!"><img src="/estilos/Electrizador.png"></a>
+        <a class="carousel-item" href="#four!"><img src="/estilos/Magmatizador.png"></a>
+        <a class="carousel-item" href="#five!"><img src="/estilos/Revestimiento_metal.png"></a>
+      </div>
+    </div> 
+    <div class="main-layout">
+      <div class="container">
+        <div class="caja-item hoverable">
+            <div class="contenedor-precio">
+                    
+            </div>
+        </div> 
+      </div>
+  </div>
+
+  <div id="modal-carrito" class="modal modal-producto-agregado">
+  <div class="modal-content">
+    
+    <div class="modal-header-confirmacion">
+      <i class="material-icons green-text modal-icono-exito">check_circle</i>
+      <h4 class="modal-titulo">Producto agregado a tu Carro</h4>
+    </div>
+    
+    <div class="modal-body-producto">
+      <img id="modal-img" src="" alt="Producto" class="modal-imagen-producto">
+      <div class="modal-info-producto">
+        <p id="modal-nombre" class="modal-nombre-texto"></p>
+        <div class="modal-precio-wrapper">
+          <img src="/estilos/Pokedolares.png" alt="Pokédolares" class="pokedolares">
+          <span id="modal-precio" class="modal-precio-texto"></span>
+        </div>
+      </div>
+
+      <div class="modal-cantidad-wrapper">
+    <button class="btn-cantidad" id="btn-restar-modal">-</button>
+    <input type="number" id="modal-cantidad-input" value="1" min="1" class="input-cantidad-modal">
+    <button class="btn-cantidad" id="btn-sumar-modal">+</button>
+  </div>
+    </div>
+
+  </div>
+  
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-light btn-flat">Seguir comprando</a>
+    <a href="#!" class="waves-effect waves-light btn btn-ir-carro">Ir al Carro</a>
+  </div>
+</div>
+
+ 
+
+      <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">The Pokémon Company</h5>
+                <p class="grey-text text-lighten-4"></p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text"></h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/pokemon/">Instagram</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.youtube.com/@OfficialPoke%CC%81monTV">Youtube</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.tiktok.com/@pokemonofficial/video/7679614990688505101">TikTok</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.twitch.tv/pokemon">Twitch</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2026 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+    </footer>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ <script src="/scripts/script.js"></script>
+</body>
+</html>
