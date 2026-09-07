@@ -3,148 +3,148 @@ const productos=[
     {
         nombre: "PokeBall",
         categoria: "pokeballs",
-        imagen:"/estilos/PokeBall.png",
+        imagen:"/estilos/imagenes/PokeBall.webp",
         precio: 200   
     },
     {
         nombre: "SuperBall",
         categoria: "pokeballs",
-        imagen:"/estilos/Super_Ball.png",
+        imagen:"/estilos/imagenes/Super_Ball.webp",
         precio: 600
     },
     {
         nombre: "UltraBall",
         categoria: "pokeballs",
-        imagen:"/estilos/Ultra_Ball.png",
+        imagen:"/estilos/imagenes/Ultra_Ball.webp",
         precio: 800
     },
 
     {
         nombre: "VelozBall",
         categoria: "pokeballs",
-        imagen:"/estilos/velozball.png",
+        imagen:"/estilos/imagenes/velozball.webp",
         precio: 1000
     },
     {
         nombre:"TurnoBall",
         categoria:"pokeballs",
-        imagen:"/estilos/Turno_Ball.png",
+        imagen:"/estilos/imagenes/Turno_Ball.webp",
         precio: 1000
     },
     {
         nombre:"EnsueñoBall",
         categoria:"pokeballs",
-        imagen:"/estilos/Ensueño_Ball.png",
+        imagen:"/estilos/imagenes/Ensueño_Ball.webp",
         precio: 10000
     },
     {
         nombre:"LujoBall",
         categoria:"pokeballs",
-        imagen:"/estilos/Lujo_Ball_.png",
+        imagen:"/estilos/imagenes/Lujo_Ball_.webp",
         precio: 100000
     },
     {
         nombre:"MasterBall",
         categoria:"pokeballs",
-        imagen:"/estilos/Master_Ball.png",
+        imagen:"/estilos/imagenes/Master_Ball.webp",
         precio: 600000
     },
     //Evolutivos
     {
         nombre:"Piedra Fuego",
         categoria:"evolutivos",
-        imagen:"/estilos/piedra_fuego.png",
+        imagen:"/estilos/imagenes/piedra_fuego.webp",
         precio: 3000
     },
     {
         nombre:"Piedra Agua",
         categoria:"evolutivos",
-        imagen:"/estilos/Piedra_agua.png",
+        imagen:"/estilos/imagenes/Piedra_agua.webp",
         precio: 3000
     },
     {
         nombre:"Piedra Trueno",
         categoria:"evolutivos",
-        imagen:"/estilos/Piedra_trueno.png",
+        imagen:"/estilos/imagenes/Piedra_trueno.webp",
         precio: 3000
     },
     {
         nombre:"Piedra Noche",
         categoria:"evolutivos",
-        imagen:"/estilos/Piedra_noche.png",
+        imagen:"/estilos/imagenes/Piedra_noche.webp",
         precio: 3000
     },
     {
         nombre:"Escama Dragon",
         categoria:"evolutivos",
-        imagen:"/estilos/Escama_dragon.png",
+        imagen:"/estilos/imagenes/Escama_dragon.webp",
         precio: 3000
     },
     {
         nombre:"Rebestimiento Metalico",
         categoria:"evolutivos",
-        imagen:"/estilos/Revestimiento_metal.png",
+        imagen:"/estilos/imagenes/Revestimiento_metal.webp",
         precio: 3000
     },
     {
         nombre:"Magmatizador",
         categoria:"evolutivos",
-        imagen:"/estilos/Magmatizador.png",
+        imagen:"/estilos/imagenes/Magmatizador.webp",
         precio: 3000
     },
     {
         nombre:"Electrizador",
         categoria:"evolutivos",
-        imagen:"/estilos/Electrizador.png",
+        imagen:"/estilos/imagenes/Electrizador.webp",
         precio: 3000
     },
     //ob.batalla
     {
         nombre:"Restos",
         categoria:"objetos batalla",
-        imagen:"/estilos/restos.png",
+        imagen:"/estilos/imagenes/restos.webp",
         precio: 20000
     },
     {
         nombre:"Banda focus",
         categoria:"objetos batalla",
-        imagen:"/estilos/banda,focus.png",
+        imagen:"/estilos/imagenes/banda,focus.webp",
         precio: 50000
     },
     {
         nombre:"Cinta elegida",
         categoria:"objetos batalla",
-        imagen:"/estilos/cinta_elección.png",
+        imagen:"/estilos/imagenes/cinta_elección.webp",
         precio: 50000
     },
     {
         nombre:"Botas Gruesas",
         categoria:"objetos batalla",
-        imagen:"/estilos/Botas_gruesas.png",
+        imagen:"/estilos/imagenes/Botas_gruesas.webp",
         precio: 50000
     },
     {
         nombre:"Casco dentado",
         categoria:"objetos batalla",
-        imagen:"/estilos/Casco_Dentado.png",
+        imagen:"/estilos/imagenes/Casco_Dentado.webp",
         precio: 50000
     },
     {
         nombre:"Vidasfera",
         categoria:"objetos batalla",
-        imagen:"/estilos/Vidasfera.png",
+        imagen:"/estilos/imagenes/Vidasfera.webp",
         precio: 50000
     },
     {
         nombre:"Chaleco Asalto",
         categoria:"objetos batalla",
-        imagen:"/estilos/Chaleco_asalto.png",
+        imagen:"/estilos/imagenes/Chaleco_asalto.webp",
         precio: 50000
     },
     {
         nombre:"Seguro Debilidad",
         categoria:"objetos batalla",
-        imagen:"/estilos/Seguro_debilidad.png",
+        imagen:"/estilos/imagenes/Seguro_debilidad.webp",
         precio: 50000
     }    
 ]
@@ -164,7 +164,7 @@ function mostrarProductos(lista) {
             <div class="card-content">
               <div class="contenedor-precio">
               <span class="nombre-producto">${producto.nombre}</span>
-                <img src="/estilos/Pokedolares.png" class="pokedolares">
+                <img src="/estilos/imagenes/Pokedolares.webp" class="pokedolares">
                 <span>${producto.precio}</span>
               </div>
             </div>
@@ -229,12 +229,32 @@ document.addEventListener('DOMContentLoaded', function() {
     mostrarProductos(productosFiltrados);
   });
   
-  // 1. Inicializar el modal 
 document.addEventListener('DOMContentLoaded', () => {
   const modales = document.querySelectorAll('.modal');
-  M.Modal.init(modales);
-});
+  const instancias = M.Modal.init(modales);
 
+  const inputCantidad = document.getElementById('modal-cantidad-input');
+  const btnRestar = document.getElementById('btn-restar-modal');
+  const btnSumar = document.getElementById('btn-sumar-modal');
+  const btnIrCarro = document.querySelector('.btn-ir-carro');
+
+  btnRestar.addEventListener('click', () => {
+    let valor = parseInt(inputCantidad.value);
+    if (valor > 1) {
+      inputCantidad.value = valor - 1;
+    }
+  });
+
+  btnSumar.addEventListener('click', () => {
+    let valor = parseInt(inputCantidad.value);
+    inputCantidad.value = valor + 1;
+  });
+
+  btnIrCarro.addEventListener('click', () => {
+    // tu lógica para ir al carrito
+    window.location.href = '/carrito.html';
+  });
+});
 
 document.addEventListener('click', (e) => {
   const botonAgregar = e.target.closest('.btn-agregar-carrito');

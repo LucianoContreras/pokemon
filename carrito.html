@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="/estilos/style.css">
+    <link rel="stylesheet" href="/estilos/imagenes/Pokedolares.webp">
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">
+                <img src="/estilos/imagenes/pokemon.webp"  class="logo">
+            </a>
+            <ul id="nav-mobile" class="right">
+                <li class="nav-search-item">
+                  <input id="Producto.busqueda" type="text" class="nav-input-search" placeholder="Buscar producto">
+                </li>
+                   <li><a class='dropdown-trigger nav-btn-filter' href="#!" data-target='dropdown1'>Filtros</a></li>
+
+                <li><a herf="blogs.html">Blogs</a></li>
+                <li>
+                    <a href="carrito.html">
+                        <i class="material-icons">shopping_cart</i>
+                    </a>
+                </li>
+            </ul>
+            <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="#!" data-categoria="todos">No filtrar</a></li>
+                <li><a href="#!" data-categoria="pokeballs">Pokeballs</a></li>
+                <li><a href="#!" data-categoria="evolutivos">Objetos Evolutivos</a></li>
+                <li><a href="#!" data-categoria="objetos batalla">Objetos combate</a></li>
+
+            </ul>
+        </div>
+        </nav>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/scripts/script.js"></script>
+</body>
+</html>

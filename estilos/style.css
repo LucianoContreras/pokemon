@@ -194,7 +194,7 @@ Cards
   background-color: #e0e0e0;
 }
 .btn-cantidad:focus{
-    background-color: #E63946;
+    background-color:#e0e0e0 ;
 }
 
 .input-cantidad-modal {
@@ -295,9 +295,16 @@ Cards
     height: auto;
 }
 
+@media only screen and (max-width: 992px) {
+  .brand-logo {
+    transform: none !important;
+    position: static !important;
+  }
+}
 
 .logo{
-    position:static ;
+    position:static;
+    transform: none !important;
     top: 20px;
     left: 20px;
     width: 200px; 
