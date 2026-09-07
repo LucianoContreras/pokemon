@@ -22,7 +22,7 @@ const productos=[
     {
         nombre: "VelozBall",
         categoria: "pokeballs",
-        imagen:"estilos/imagenes/velozball.webp",
+        imagen:"estilos/imagenes/velozbBall.webp",
         precio: 1000
     },
     {
@@ -53,7 +53,7 @@ const productos=[
     {
         nombre:"Piedra Fuego",
         categoria:"evolutivos",
-        imagen:"estilos/imagenes/piedra_fuego.webp",
+        imagen:"estilos/imagenes/Piedra_fuego.webp",
         precio: 3000
     },
     {
@@ -83,7 +83,7 @@ const productos=[
     {
         nombre:"Rebestimiento Metalico",
         categoria:"evolutivos",
-        imagen:"estilos/imagenes/Revestimiento_metal.webp",
+        imagen:"estilos/imagenes/Revestimiento_Metal.webp",
         precio: 3000
     },
     {
@@ -102,7 +102,7 @@ const productos=[
     {
         nombre:"Restos",
         categoria:"objetos batalla",
-        imagen:"estilos/imagenes/restos.webp",
+        imagen:"estilos/imagenes/Restos.webp",
         precio: 20000
     },
     {
@@ -114,7 +114,7 @@ const productos=[
     {
         nombre:"Cinta elegida",
         categoria:"objetos batalla",
-        imagen:"estilos/imagenes/cinta_elección.webp",
+        imagen:"estilos/imagenes/Cinta_elección.webp",
         precio: 50000
     },
     {
