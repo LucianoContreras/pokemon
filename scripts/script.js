@@ -3,148 +3,148 @@ const productos=[
     {
         nombre: "PokeBall",
         categoria: "pokeballs",
-        imagen:"/estilos/imagenes/PokeBall.webp",
+        imagen:"estilos/imagenes/PokeBall.webp",
         precio: 200   
     },
     {
         nombre: "SuperBall",
         categoria: "pokeballs",
-        imagen:"/estilos/imagenes/Super_Ball.webp",
+        imagen:"estilos/imagenes/Super_Ball.webp",
         precio: 600
     },
     {
         nombre: "UltraBall",
         categoria: "pokeballs",
-        imagen:"/estilos/imagenes/Ultra_Ball.webp",
+        imagen:"estilos/imagenes/Ultra_Ball.webp",
         precio: 800
     },
 
     {
         nombre: "VelozBall",
         categoria: "pokeballs",
-        imagen:"/estilos/imagenes/velozball.webp",
+        imagen:"estilos/imagenes/velozball.webp",
         precio: 1000
     },
     {
         nombre:"TurnoBall",
         categoria:"pokeballs",
-        imagen:"/estilos/imagenes/Turno_Ball.webp",
+        imagen:"estilos/imagenes/Turno_Ball.webp",
         precio: 1000
     },
     {
         nombre:"EnsueñoBall",
         categoria:"pokeballs",
-        imagen:"/estilos/imagenes/Ensueño_Ball.webp",
+        imagen:"estilos/imagenes/Ensueño_Ball.webp",
         precio: 10000
     },
     {
         nombre:"LujoBall",
         categoria:"pokeballs",
-        imagen:"/estilos/imagenes/Lujo_Ball_.webp",
+        imagen:"estilos/imagenes/Lujo_Ball_.webp",
         precio: 100000
     },
     {
         nombre:"MasterBall",
         categoria:"pokeballs",
-        imagen:"/estilos/imagenes/Master_Ball.webp",
+        imagen:"estilos/imagenes/Master_Ball.webp",
         precio: 600000
     },
     //Evolutivos
     {
         nombre:"Piedra Fuego",
         categoria:"evolutivos",
-        imagen:"/estilos/imagenes/piedra_fuego.webp",
+        imagen:"estilos/imagenes/piedra_fuego.webp",
         precio: 3000
     },
     {
         nombre:"Piedra Agua",
         categoria:"evolutivos",
-        imagen:"/estilos/imagenes/Piedra_agua.webp",
+        imagen:"estilos/imagenes/Piedra_agua.webp",
         precio: 3000
     },
     {
         nombre:"Piedra Trueno",
         categoria:"evolutivos",
-        imagen:"/estilos/imagenes/Piedra_trueno.webp",
+        imagen:"estilos/imagenes/Piedra_trueno.webp",
         precio: 3000
     },
     {
         nombre:"Piedra Noche",
         categoria:"evolutivos",
-        imagen:"/estilos/imagenes/Piedra_noche.webp",
+        imagen:"estilos/imagenes/Piedra_noche.webp",
         precio: 3000
     },
     {
         nombre:"Escama Dragon",
         categoria:"evolutivos",
-        imagen:"/estilos/imagenes/Escama_dragon.webp",
+        imagen:"estilos/imagenes/Escama_dragon.webp",
         precio: 3000
     },
     {
         nombre:"Rebestimiento Metalico",
         categoria:"evolutivos",
-        imagen:"/estilos/imagenes/Revestimiento_metal.webp",
+        imagen:"estilos/imagenes/Revestimiento_metal.webp",
         precio: 3000
     },
     {
         nombre:"Magmatizador",
         categoria:"evolutivos",
-        imagen:"/estilos/imagenes/Magmatizador.webp",
+        imagen:"estilos/imagenes/Magmatizador.webp",
         precio: 3000
     },
     {
         nombre:"Electrizador",
         categoria:"evolutivos",
-        imagen:"/estilos/imagenes/Electrizador.webp",
+        imagen:"estilos/imagenes/Electrizador.webp",
         precio: 3000
     },
     //ob.batalla
     {
         nombre:"Restos",
         categoria:"objetos batalla",
-        imagen:"/estilos/imagenes/restos.webp",
+        imagen:"estilos/imagenes/restos.webp",
         precio: 20000
     },
     {
         nombre:"Banda focus",
         categoria:"objetos batalla",
-        imagen:"/estilos/imagenes/banda,focus.webp",
+        imagen:"estilos/imagenes/banda,focus.webp",
         precio: 50000
     },
     {
         nombre:"Cinta elegida",
         categoria:"objetos batalla",
-        imagen:"/estilos/imagenes/cinta_elección.webp",
+        imagen:"estilos/imagenes/cinta_elección.webp",
         precio: 50000
     },
     {
         nombre:"Botas Gruesas",
         categoria:"objetos batalla",
-        imagen:"/estilos/imagenes/Botas_gruesas.webp",
+        imagen:"estilos/imagenes/Botas_gruesas.webp",
         precio: 50000
     },
     {
         nombre:"Casco dentado",
         categoria:"objetos batalla",
-        imagen:"/estilos/imagenes/Casco_Dentado.webp",
+        imagen:"estilos/imagenes/Casco_Dentado.webp",
         precio: 50000
     },
     {
         nombre:"Vidasfera",
         categoria:"objetos batalla",
-        imagen:"/estilos/imagenes/Vidasfera.webp",
+        imagen:"estilos/imagenes/Vidasfera.webp",
         precio: 50000
     },
     {
         nombre:"Chaleco Asalto",
         categoria:"objetos batalla",
-        imagen:"/estilos/imagenes/Chaleco_asalto.webp",
+        imagen:"estilos/imagenes/Chaleco_asalto.webp",
         precio: 50000
     },
     {
         nombre:"Seguro Debilidad",
         categoria:"objetos batalla",
-        imagen:"/estilos/imagenes/Seguro_debilidad.webp",
+        imagen:"estilos/imagenes/Seguro_debilidad.webp",
         precio: 50000
     }    
 ]
