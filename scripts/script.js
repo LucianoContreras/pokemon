@@ -22,7 +22,7 @@ const productos=[
     {
         nombre: "VelozBall",
         categoria: "pokeballs",
-        imagen:"estilos/imagenes/velozbBall.webp",
+        imagen:"estilos/imagenes/velozBall.webp",
         precio: 1000
     },
     {
