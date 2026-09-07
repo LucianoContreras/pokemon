@@ -164,7 +164,7 @@ function mostrarProductos(lista) {
             <div class="card-content">
               <div class="contenedor-precio">
               <span class="nombre-producto">${producto.nombre}</span>
-                <img src="/estilos/imagenes/Pokedolares.webp" class="pokedolares">
+                <img src="estilos/imagenes/Pokedolares.webp" class="pokedolares">
                 <span>${producto.precio}</span>
               </div>
             </div>
@@ -252,7 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   btnIrCarro.addEventListener('click', () => {
   
-    window.location.href = '/carrito.html';
+    window.location.href = 'carrito.html';
   });
 });
 
