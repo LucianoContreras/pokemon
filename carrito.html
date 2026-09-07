@@ -12,32 +12,51 @@
 <body>
     <nav>
         <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo">
+            <a href="carrito.html" class="brand-logo">
                 <img src="/estilos/imagenes/pokemon.webp"  class="logo">
             </a>
             <ul id="nav-mobile" class="right">
                 <li class="nav-search-item">
-                  <input id="Producto.busqueda" type="text" class="nav-input-search" placeholder="Buscar producto">
+                
                 </li>
-                   <li><a class='dropdown-trigger nav-btn-filter' href="#!" data-target='dropdown1'>Filtros</a></li>
-
-                <li><a herf="blogs.html">Blogs</a></li>
+                   
+                <li><a href="https://www.pokemon.com" target="_blank" rel="noopener noreferrer">Blogs</a></li>
                 <li>
-                    <a href="carrito.html">
-                        <i class="material-icons">shopping_cart</i>
+                    <a href="index.html">
+                        <i class="material-icons">home</i>
                     </a>
                 </li>
             </ul>
-            <ul id='dropdown1' class='dropdown-content'>
-                <li><a href="#!" data-categoria="todos">No filtrar</a></li>
-                <li><a href="#!" data-categoria="pokeballs">Pokeballs</a></li>
-                <li><a href="#!" data-categoria="evolutivos">Objetos Evolutivos</a></li>
-                <li><a href="#!" data-categoria="objetos batalla">Objetos combate</a></li>
-
-            </ul>
         </div>
         </nav>
-    
+        <main class="container-carrito">
+        <div class="seccion-productos">
+            <h2 class="titulo-carro">
+            Carro <span id="cant-total-items"></span>
+            </h2>
+            <div id="contenedor-carro-items"></div>
+        </div>
+        <div class="seccion-resumen">
+            <h3 class="resumen-titulo">Resumen de la compra</h3>
+            <div class="card-resumen">
+            <div class="resumen-linea">
+                <span>Productos (<span id="resumen-cant-prod">0</span>)</span>
+                <span id="resumen-subtotal">$0</span>
+            </div>
+            <div class="resumen-linea resumen-descuento">
+                <span>Descuentos</span>
+                <span id="resumen-descuento">-$0</span>
+            </div>
+            <div class="resumen-linea resumen-total">
+                <span>Total:</span>
+                <span id="resumen-total">$0</span>
+            </div>
+            <button id="btn-continuar-compra" class="btn btn-continuar-compra">
+                Continuar compra
+            </button>
+            </div>
+        </div>
+        </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="/scripts/script.js"></script>
 </body>
